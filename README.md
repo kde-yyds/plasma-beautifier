@@ -1,8 +1,8 @@
 # plasma-beautifier
 KDE Plasma美化工具
 # 鸣谢
-Lightly <https://github.com/Luwx/Lightly>
-Klassy <https://github.com/paulmcauley/klassy>
+Lightly <https://github.com/Luwx/Lightly>  
+Klassy <https://github.com/paulmcauley/klassy>  
 Deepin-v20(plasma theme) <https://www.pling.com/p/1413900>
 # 安装
 `git clone https://github.com/kde-yyds/plasma-beautifier`
