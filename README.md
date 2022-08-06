@@ -12,4 +12,5 @@ Deepin-v20(plasma theme) <https://www.pling.com/p/1413900>
 `sudo make install`
 # 删除
 在文件夹plasma-beautifier中，运行`sudo make uninstall`
-
+# 运行
+打开终端，输入 plasma-beautifier  
