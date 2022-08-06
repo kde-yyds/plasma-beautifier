@@ -53,7 +53,7 @@ void install_lightly_transparent_color_theme()
 }
 void main2()
 {
-    cout<<"欢迎使用KDE Plasma美化工具\n\n";
+    cout<<"欢迎使用KDE Plasma美化工具\nhttps://github.com/kde-yyds/plasma-beautifier\n\n";
     cout<<"KDE Plasma版本：";
     plasma_version();
     cout<<"\n\n\n";
@@ -69,8 +69,9 @@ void main2()
     {
         cout<<"正在安装Lightly <https://github.com/Luwx/Lightly>\n";
         if(lightly_installed==0) install_lightly();
+        system("cp -r /usr/lib/plasma-beautifier/data/lightlyrc ~/.config/");
         cout<<"安装完毕，请打开KDE系统设置->外观->应用程序风格 切换成Lightly\n按enter继续\n";
-        getchar();
+        getchar();getchar();
         main2();
     }
     if(t==2)
@@ -78,7 +79,7 @@ void main2()
         cout<<"正在安装DeepinV20-dark<https://www.pling.com/p/1413900>\n";
         install_Deepin_v20_desktoptheme();
         cout<<"安装完毕，请打开KDE系统设置->外观->Plasma视觉风格 切换成Deepin-v20\n按enter继续\n";
-        getchar();
+        getchar();getchar();
         main2();
     }
     if(t==3)
@@ -91,12 +92,14 @@ void main2()
         if(c==1)
         {
             if(lightly_installed==0) install_lightly();
+            system("cp -r /usr/lib/plasma-beautifier/data/lightlyrc ~/.config/");
             cout<<"安装完毕，请打开KDE系统设置->外观->窗口装饰元素 切换成Lightly\n按enter继续\n";
         }
         if(c==2)
         {
             if(klassy_installed==0) install_klassy();
-            cout<<"安装完毕，请打开KDE系统设置->外观->窗口装饰元素 切换成Klassy,然后点击klassy右下角的编辑按钮，点击title bar,把always make maximized titlebars opaque的勾去掉\n按enter继续\n";
+            system("cp -r /usr/lib/plasma-beautifier/data/klassyrc ~/.config/");
+            cout<<"安装完毕，请打开KDE系统设置->外观->窗口装饰元素 切换成Klassy\n";
         }
         getchar();
         getchar();
@@ -107,7 +110,7 @@ void main2()
         cout<<"正在安装Lightly-transparent（把lightly的颜色主题透明度调高）\n";
         install_lightly_transparent_color_theme();
         cout<<"安装完毕，请打开KDE系统设置->外观->颜色 切换成Lightly-transparent\n按enter继续\n";
-        getchar();
+        getchar();getchar();
         main2();
     }
 }
