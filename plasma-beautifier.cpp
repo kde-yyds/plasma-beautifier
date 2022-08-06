@@ -2,11 +2,6 @@
 #include <fstream>
 using namespace std;
 int lightly_installed=0,klassy_installed=0;
-void init()
-{
-    system("rm -rf /tmp/lightly");
-    system("rm -rf /tmp/klassy");
-}
 void plasma_version()
 {
     system("kwin --version >/tmp/kwinversion");
